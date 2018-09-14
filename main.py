@@ -8,7 +8,7 @@ def sleep(mytime=""):
         time.sleep(mytime)
 while num > 0:
     f = open("test.txt", 'a')
-    r = ShowapiRequest("http://route.showapi.com/1311-1","72683","028b760013994ee9ab2cc01601603fbb" )
+    r = ShowapiRequest("http://route.showapi.com/1311-1","my_appId","my_appSecret" )
     r.addBodyPara("long", x)
     res = r.post()
     #print(res.text) # 返回信息
